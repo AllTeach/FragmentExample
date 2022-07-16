@@ -16,9 +16,12 @@ import android.widget.Toast;
 public class SecondExampleFragment extends Fragment {
 
 
-    private RegisterResult registerResult;
     private Button b;
     private EditText etMail,etPassword;
+
+    // reference and interface
+    private RegisterResult registerResult;
+
     public interface RegisterResult {
         void dataFromRegister(String mail,String password);
 

@@ -39,7 +39,7 @@ public class TabFragmentActivity extends FragmentActivity implements SecondExamp
 
     @Override
     public void dataFromRegister(String mail, String password) {
-        Log.d(TAG, "dataFromRegister: recevied in Activity " + mail + " , " + password);
+        Log.d(TAG, "dataFromRegister: received in Activity " + mail + " , " + password);
         Toast.makeText(this, "Received data in Activity " + mail + " , " + password, Toast.LENGTH_SHORT).show();
 
     }
