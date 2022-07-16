@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#B9F8CF"
+    tools:context=".SimpleFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_header"
+
+        android:text="Fragment: All ok so far?"
+        android:layout_weight="2"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        >
+
+        <RadioButton
+            android:id="@+id/radio_button_yes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="yes"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/radio_button_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="no"
+            android:layout_weight="1"/>
+    </RadioGroup>
+
+    <RatingBar
+        android:id="@+id/rbFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:numStars="3"
+        android:max="3"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</LinearLayout>
